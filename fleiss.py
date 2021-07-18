@@ -12,7 +12,7 @@ def fleiss_interp(number):
     if number < 0.6:
         print("Fleiss kappa is", number, "resulting in moderate agreement (4/6)")
     if number < 0.8:
-        print("Fleiss kappa is", number, "resulting in substaintial agreement (5/6)")
+        print("Fleiss kappa is", number, "resulting in substantial agreement (5/6)")
     if number < 0.1:
         print("Fleiss kappa is", number, "resulting in almost perfect agreement (6/6)")
 
