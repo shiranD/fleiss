@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import sys
 from read_gsheet import read_sheet
 
 def fleiss_interp(number):
