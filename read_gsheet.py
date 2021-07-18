@@ -8,13 +8,8 @@ def read_sheet(SCOPES, SERVICE_ACCOUNT_FILE, RANGE):
     creds = None
     creds = service_account.Credentials.from_service_account_file(\
     SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-    
-    from google.oauth2.credentials import Credentials
-    
-    # If modifying these scopes, delete the file token.json.
-    
+           
     # The ID and range of a sample spreadsheet.
-    #SAMPLE_SPREADSHEET_ID = '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms'
     SAMPLE_SPREADSHEET_ID='1-vkyd27C-dIk5ecHJ102iQhZtDg3Oh7d-hhL10znChk'
     
     service = build('sheets', 'v4', credentials=creds)
